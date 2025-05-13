@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.display-area {
+  background: #111;
+  padding: 20px;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  min-height: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button.btn {
+  flex: 1 0 22%; /* Allows 4 buttons per row with gaps */
+  padding: 20px;
+  font-size: 1.2rem;
+  align-self: center;
+  justify-self: center;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button.btn:hover {
+  background: #444;
+}
+
+button.operator {
+  background-color: #f57c00;
+}
+
+button.equals {
+  background-color: #4caf50;
+  flex: 1 0 100%; /* Make = span full width */
+}
+
+button.clear {
+  background-color: #d32f2f;
+}
+
+button.backspace {
+  background-color: #607d8b;
+}
